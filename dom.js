@@ -51,21 +51,21 @@
 // h1.style.backgroundColor = "black";
 // h1.style.textAlign = "center";
 
-let p = document.getElementById("intro");
-p.className = "add";
-console.log(p);
+// let p = document.getElementById("intro");
+// p.className = "add";
+// console.log(p);
 
-let text = document.querySelector(".add");
+// let text = document.querySelector(".add");
 
-text.style.color = "red";
+// text.style.color = "red";
 
-p.className = "note";
+// p.className = "note";
 
-let heading = document.getElementById("list");
+// let heading = document.getElementById("list");
 
-heading.classList.add("note-heading");
-heading.classList.add("good");
-heading.classList.remove("good");
-heading.classList.toggle("wow");
-// heading.classList.toggle("note-heading");
-console.log(heading);
+// heading.classList.add("note-heading");
+// heading.classList.add("good");
+// heading.classList.remove("good");
+// heading.classList.toggle("wow");
+// // heading.classList.toggle("note-heading");
+// console.log(heading);
