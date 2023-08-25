@@ -54,24 +54,25 @@ const products = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minim.",
   },
 ];
-function getProduct() {
-  let displayProduct = "";
-  products.map((items) => {
-    displayProduct += `
-      <div class="col-md-4">
-      <div class="card">
-        <img src="${items.image}" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">${items.name}</h5>
-          <p class="card-text">
-            ${items.description}
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+
+function renderProduct() {
+  let productDetail = "";
+  products.map((item) => {
+    productDetail += `
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="${item.image}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">${item.name}</h5>
+              <p class="card-text">
+                ${item.description}
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-          `;
+   `;
   });
-  document.getElementById("product").innerHTML = displayProduct;
+  document.getElementById("product").innerHTML = productDetail;
 }
-getProduct();
+renderProduct();

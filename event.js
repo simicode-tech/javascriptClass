@@ -35,6 +35,8 @@ const msg = document.querySelector(".msg");
 
 // element.addEventListener(event, function)
 
-btn.addEventListener("click", () => {
-  msg.textContent = "message changed";
-});
+btn.addEventListener("click", myClick);
+
+function myClick(e) {
+  console.log(e.target.id);
+}
