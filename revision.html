@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .product-items {
+        display: flex;
+        padding: 10px;
+        /* flex-wrap: wrap; */
+      }
+      .product-list {
+        box-shadow: 1px 1px 2px black;
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Javascript Revision</h2>
+    <form action="" method="post" id="myForm">
+      <label for="">Username</label>
+      <input
+        type="text"
+        placeholder="Enter your Username"
+        id="username"
+        name="username"
+      /><br /><br />
+      <label for="">Email</label>
+      <input
+        type="email"
+        placeholder="Enter your Email"
+        id="email"
+        name="email"
+      /><br /><br />
+      <label for="">Password</label>
+      <input
+        type="password"
+        placeholder="Enter your Password"
+        id="password"
+        name="password"
+      />
+      <button>submit</button>
+    </form>
+    <section>
+      <h2>Product</h2>
+      <div id="product" class="product-items"></div>
+    </section>
+    <section>
+      <h2>Cart</h2>
+      <div id="cart">
+        <table border="1" width="500">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>price</th>
+              <th>total</th>
+            </tr>
+          </thead>
+          <tbody id="table"></tbody>
+          <tfoot>
+            <th colspan="4">Total Cost: <span id="total-cost">$0.00</span></th>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+    <script src="revision.js"></script>
+  </body>
+</html>

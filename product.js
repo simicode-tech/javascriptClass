@@ -76,3 +76,9 @@ function renderProduct() {
   document.getElementById("product").innerHTML = productDetail;
 }
 renderProduct();
+
+function filterProduct() {
+  
+}
+
+
